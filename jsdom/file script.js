@@ -121,3 +121,45 @@ function tambahTugas(){
 }
     inputButton.addEventListener('click', tambahTugas);
 
+//tugas 13 B
+inputButton.onclick = klik();
+ function klik(){
+    alert('OK');
+ }
+ let inputButton = document.querySelector('#input button');
+ inputButton.innerHTML = "Tambah";
+
+ function gantiRed(){
+   inputButton.Style.backgroundColor = 'red';
+ }
+  function gantiBlack(){
+   inputButton.Style.color = 'black';
+  }
+// inputButton.onmouseover = gantiRed;
+// inputButton.onmouseover = gantiBlack;
+// function gantiRed(){
+//    inputButton.Style.backgroundColor = 'red';
+// }
+// function gantiBlack(){
+//    inputButton.Style.color = 'black';
+
+// }
+inputButton.addEventListener("mouseover",gantiRed);
+inputButton.addEventListener("mouseover", gantiBlack);
+function gantiRed(){
+   inputButton.Style.backgroundColor = 'red';
+}
+function gantiBlack(){
+   inputButton.Style.color = 'black';
+   
+}
+
+inputButton.addEventListener('click', btnAktif);
+function btnAktif(){
+   console.log("Button Aktif");
+}
+document.getElementById('input').addEventListener('submit', SubmitAktif);
+
+function submitAktif(){
+   console.log("Submit Aktif");
+}
